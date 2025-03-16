@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Responsive Navbar</title>
+    <link
+      rel="shortcut icon"
+      href="/image/myimage-fotor-bg-remover-20250315145620.png"
+      type="image/x-icon"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#" class="logo">Ubaid<span>WebPro</span></a>
+
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contact</a>
+          </li>
+        </ul>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="left-content">
+        <h1 class="dynamic-heading">
+          <span class="dynamic-text" id="dynamic-text"></span>
+        </h1>
+        <p class="description">
+          I build dynamic, user-friendly web applications with seamless
+          performance, combining front-end and back-end expertise.
+        </p>
+        <div class="social-icons">
+          <a
+            href="https://github.com/UBAID-KHAN14"
+            target="_blank"
+            class="social-icon"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/ubaid-khan-10245b354/"
+            target="_blank"
+            class="social-icon"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/ubaidwebpro/"
+            target="_blank"
+            class="social-icon"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+        </div>
+        <button class="contact-btn">Get in Touch</button>
+      </div>
+
+      <div class="right-content">
+        <pre class="code-editor" id="code-editor"></pre>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+      <div class="about-container">
+        <div class="about-left">
+          <div class="image-container">
+            <img
+              src="/image/myimage-fotor-bg-remover-20250315145620.png"
+              alt="Profile Image"
+              class="profile-img"
+            />
+          </div>
+        </div>
+        <div class="about-right">
+          <h1 class="about-heading">About Me</h1>
+          <h3 class="about-subtitle">Full Stack Developer</h3>
+          <p class="about-description">
+            I'm a passionate full-stack developer with 5+ years of experience in
+            crafting robust web applications. My expertise spans both front-end
+            and back-end technologies, including React, Node.js, and cloud
+            services. I thrive on turning complex problems into elegant,
+            user-friendly solutions while maintaining clean and efficient code
+            standards.
+          </p>
+          <div class="social-icons">
+            <a
+              href="https://github.com/UBAID-KHAN14"
+              target="_blank"
+              class="social-icon"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/ubaid-khan-10245b354/"
+              target="_blank"
+              class="social-icon"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/ubaidwebpro/"
+              target="_blank"
+              class="social-icon"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="mailto:ubaidkhanweb2004@gmail.com" class="social-icon"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </div>
+          <a
+                href="/resume/myresume.pdf"
+                class="btn contact-btn"
+                download
+                >Download My Resume</a
+              >
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section">
+      <div class="container">
+        <h2 class="section-heading">Skills & Expertise</h2>
+
+        <div class="skills-grid">
+          <!-- HTML Skill -->
+          <div class="skill-card" data-experience="95">
+            <div class="skill-header">
+              <i class="fab fa-html5 skill-icon"></i>
+              <h3 class="skill-name">HTML5</h3>
+            </div>
+            <p class="skill-experience">5+ Years Experience</p>
+            <div class="skill-progress">
+              <div class="progress-bar"></div>
+            </div>
+          </div>
+
+          <!-- CSS Skill -->
+          <div class="skill-card" data-experience="90">
+            <div class="skill-header">
+              <i class="fab fa-css3-alt skill-icon"></i>
+              <h3 class="skill-name">CSS3</h3>
+            </div>
+            <p class="skill-experience">4+ Years Experience</p>
+            <div class="skill-progress">
+              <div class="progress-bar"></div>
+            </div>
+          </div>
+
+          <!-- JavaScript Skill -->
+          <div class="skill-card" data-experience="85">
+            <div class="skill-header">
+              <i class="fab fa-js-square skill-icon"></i>
+              <h3 class="skill-name">JavaScript</h3>
+            </div>
+            <p class="skill-experience">4+ Years Experience</p>
+            <div class="skill-progress">
+              <div class="progress-bar"></div>
+            </div>
+          </div>
+
+          <!-- PHP Skill -->
+          <div class="skill-card" data-experience="80">
+            <div class="skill-header">
+              <i class="fab fa-php skill-icon"></i>
+              <h3 class="skill-name">PHP</h3>
+            </div>
+            <p class="skill-experience">3+ Years Experience</p>
+            <div class="skill-progress">
+              <div class="progress-bar"></div>
+            </div>
+          </div>
+
+          <!-- Laravel Skill -->
+          <div class="skill-card" data-experience="75">
+            <div class="skill-header">
+              <i class="fas fa-code skill-icon"></i>
+              <h3 class="skill-name">Laravel</h3>
+            </div>
+            <p class="skill-experience">2+ Years Experience</p>
+            <div class="skill-progress">
+              <div class="progress-bar"></div>
+            </div>
+          </div>
+
+          <!-- MySQL Skill -->
+          <div class="skill-card" data-experience="85">
+            <div class="skill-header">
+              <i class="fas fa-database skill-icon"></i>
+              <h3 class="skill-name">MySQL</h3>
+            </div>
+            <p class="skill-experience">3+ Years Experience</p>
+            <div class="skill-progress">
+              <div class="progress-bar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section">
+      <div class="container">
+        <h2 class="section-heading">Portfolio Showcase</h2>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="/image/webiste1.png" alt="Project 1" />
+              <div class="project-links">
+                <a href="#" class="project-link"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a href="#" class="project-link"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Personal Portfolio</h3>
+              <p class="project-description">
+                A sleek, interactive portfolio showcasing skills and projects
+                with smooth animations.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">Html</span>
+                <span class="tech-badge">Css</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">Bootstrap</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="/image/website2.png" alt="Project 2" />
+              <div class="project-links">
+                <a href="#" class="project-link"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a href="#" class="project-link"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Shoes Website</h3>
+              <p class="project-description">
+                A stylish shoe store with interactive galleries and a seamless
+                shopping experience. 🚀
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">Html</span>
+                <span class="tech-badge">Css</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">Bootstrap</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="/image/webstie3.png" alt="Project 2" />
+              <div class="project-links">
+                <a href="#" class="project-link"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a href="#" class="project-link"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">E-Commerce Platform</h3>
+              <p class="project-description">
+                A Laravel-powered store with secure payments, user
+                authentication, and a dynamic UI.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">Html</span>
+                <span class="tech-badge">Css</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">Bootstrap</span>
+                <span class="tech-badge">Php</span>
+                <span class="tech-badge">Laravel</span>
+                <span class="tech-badge">Mysql</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="/image/website4.png" alt="Project 2" />
+              <div class="project-links">
+                <a href="#" class="project-link"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a href="#" class="project-link"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Shoes Website</h3>
+              <p class="project-description">
+                Real-time data visualization dashboard with interactive charts
+                and user management system.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">Html</span>
+                <span class="tech-badge">Css</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">Bootstrap</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add more project cards as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonials-section">
+      <div class="container">
+        <h2 class="section-heading">Testimonials</h2>
+
+        <div class="testimonials-grid">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <div class="quote-icon">
+                <i class="fas fa-quote-left"></i>
+              </div>
+              <p class="testimonial-text">
+                Exceptional developer who consistently delivers high-quality
+                work. Their attention to detail and problem-solving skills are
+                unmatched.
+              </p>
+            </div>
+            <div class="client-info">
+              <img src="/image/client1.jpg" alt="Client" class="client-image" />
+              <div class="client-details">
+                <h4 class="client-name">John Smith</h4>
+                <p class="client-role">CTO at TechCorp</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <div class="quote-icon">
+                <i class="fas fa-quote-left"></i>
+              </div>
+              <p class="testimonial-text">
+                Transformed our web platform with innovative solutions. A true
+                professional with excellent communication skills.
+              </p>
+            </div>
+            <div class="client-info">
+              <img src="/image/client2.jpg" alt="Client" class="client-image" />
+              <div class="client-details">
+                <h4 class="client-name">Nik Johnson</h4>
+                <p class="client-role">Product Manager at StartUpX</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Clients Section -->
+        <div class="clients-section">
+          <h3 class="clients-heading">Trusted By</h3>
+          <div class="clients-grid">
+            <img src="/image/apple.png" alt="Client logo" class="client-logo" />
+            <img src="/image/bmw.png" alt="Client logo" class="client-logo" />
+            <img src="/image/halal.png" alt="Client logo" class="client-logo" />
+            <img src="/image/nike.png" alt="Client logo" class="client-logo" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+      <div class="container">
+        <h2 class="section-heading">Get in Touch</h2>
+
+        <div class="contact-grid">
+          <!-- Contact Info -->
+          <div class="contact-info">
+            <div class="info-card">
+              <h3 class="info-title">Let's Connect</h3>
+              <p class="info-text">
+                Have a project in mind? Let's turn your ideas into reality!
+              </p>
+
+              <div class="contact-details">
+                <div class="detail-item">
+                  <i class="fas fa-envelope detail-icon"></i>
+                  <div class="detail-content">
+                    <span>Email</span>
+                    <a href="mailto:contact@ubaidwebpro.com"
+                      >ubaidkhanweb2004@gmail.com</a
+                    >
+                  </div>
+                </div>
+
+                <div class="detail-item">
+                  <i class="fas fa-phone detail-icon"></i>
+                  <div class="detail-content">
+                    <span>Phone</span>
+                    <a href="tel:+1234567890">+92 3115009095</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="social-section">
+                <h4>Follow Me</h4>
+                <div class="social-icons">
+                  <a href="#" class="social-icon"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                  <a href="#" class="social-icon"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                  <a href="#" class="social-icon"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                  <a href="#" class="social-icon"
+                    ><i class="fab fa-facebook"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Google Maps Embed -->
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317715.7119163244!2d-0.3817844692580104!3d51.52873521156325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2s!4v1623930409656!5m2!1sen!2s"
+                class="google-map"
+                allowfullscreen=""
+                loading="lazy"
+              >
+              </iframe>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="contact-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <a href="#" class="logo">Ubaid<span>WebPro</span></a>
+            <p class="footer-tagline">Turning Ideas into Digital Reality</p>
+          </div>
+
+          <div class="footer-social">
+            <h4 class="footer-heading">Connect With Me</h4>
+            <div class="social-icons">
+              <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+              <a href="#" class="social-icon"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fab fa-facebook"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">&copy; 2023 UbaidWebPro. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Back to Top Button -->
+      <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+      </a>
+    </footer>
+
+    <!-- Toggle Button -->
+    <div class="theme-toggle">
+      <button id="darkModeToggle" class="toggle-btn">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
