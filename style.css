@@ -16,28 +16,78 @@ body {
     --border-color: #eeeeee;
 }
 
+/* ==========================================================================
+   SPLASCH SCREEN
+   ========================================================================== */
+ #splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    z-index: 9999;
+    transition: opacity 1s ease-out;
+}
+
+.splash-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.neon-text {
+    font-size: 60px;
+    font-family: Arial, sans-serif;
+    color: #0ff;
+    text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
+    animation: neon 1.5s infinite alternate;
+}
+
+@keyframes neon {
+    from {
+        text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
+        transform: scale(1);
+    }
+    to {
+        text-shadow: 0 0 20px #0ff, 0 0 40px #0ff, 0 0 60px #0ff;
+        transform: scale(1.1);
+    }
+}
+
+/* ==========================================================================
+   MAIN WEBSITE CONTENT
+   ========================================================================== */
+#website-content {
+    display: none;
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-    width: 12px; /* Width of the scrollbar */
+    width: 12px;
   }
   
   ::-webkit-scrollbar-track {
-    background: #fff; /* Dark Gray for the track */
+    background: #fff; 
     border-radius: 10px;
   }
   
   ::-webkit-scrollbar-thumb {
-    background: #4CAF50; /* Gradient for the thumb */
+    background: #4CAF50;
     border-radius: 10px;
-    border: 3px solid #fff; /* Match the track color */
+    border: 3px solid #fff; 
     transition: background 0.3s ease;
   }
   
   ::-webkit-scrollbar-thumb:hover {
-    background: #4CAF50 /* Reverse gradient on hover */
+    background: #4CAF50 
   }
 
-
+/* ==========================================================================
+   NAVBAR
+   ========================================================================== */
 .navbar {
     background: rgba(255, 255, 255, 0.95);
     padding: 1rem 2rem;
@@ -182,7 +232,9 @@ body {
 }
 
 
-/* Hero Section */
+/* ==========================================================================
+   HERO SECTION
+   ========================================================================== */
 .hero-section {
     display: flex;
     justify-content: space-between;
@@ -339,7 +391,9 @@ body {
 }
 
 
-/* About Section */
+/* ==========================================================================
+   ABOUT SECTION
+   ========================================================================== */
 .about-section {
     padding: 6rem 2rem;
     background: #fff;
@@ -408,7 +462,9 @@ body {
     margin-bottom: 1rem;
 }
 
-/* Responsive Design */
+/* ==========================================================================
+   RESPONSIVE DESIGN
+   ========================================================================== */
 @media (max-width: 992px) {
     .about-container {
         flex-direction: column;
@@ -459,7 +515,9 @@ body {
     }
 }
 
-/* Skills Section */
+/* ==========================================================================
+   SKILLS SECTION
+   ========================================================================== */
 .skills-section {
     padding: 6rem 2rem;
     background: #f8f9fa;
@@ -582,7 +640,9 @@ body {
 }
 
 
-/* Projects Section */
+/* ==========================================================================
+   PROJECTS SECTION
+   ========================================================================== */
 .projects-section {
     padding: 6rem 2rem;
     background: #fff;
@@ -730,7 +790,9 @@ body {
 }
 
 
-/* Testimonials Section */
+/* ==========================================================================
+   TESTOMIAL SECTION
+   ========================================================================== */
 .testimonials-section {
     padding: 6rem 2rem;
     background: #f8f9fa;
@@ -791,7 +853,10 @@ body {
     font-size: 0.9rem;
 }
 
-/* Clients Section */
+
+/* ==========================================================================
+   CLIENTS SECTION
+   ========================================================================== */
 .clients-section {
     margin-top: 4rem;
     padding: 2rem 0;
@@ -860,7 +925,9 @@ body {
 }
 
 
-/* Contact Section */
+/* ==========================================================================
+   CONTACT SECTION
+   ========================================================================== */
 .contact-section {
     padding: 6rem 2rem;
     background: #fff;
@@ -1042,7 +1109,9 @@ body {
 }
 
 
-/* Dark Mode Toggle */
+/* ==========================================================================
+   DARK MODE TOGGLE
+   ========================================================================== */
 .theme-toggle {
     position: fixed;
     bottom: 2rem;
@@ -1121,7 +1190,9 @@ body {
 }
 
 
-/* Footer Styles */
+/* ==========================================================================
+   FOOTER SECTION
+   ========================================================================== */
 .site-footer {
     background: #2d2d2d;
     color: #ffffff;

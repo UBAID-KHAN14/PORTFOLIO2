@@ -1,3 +1,21 @@
+// =============================================
+// SPLASH SCREEN
+// =============================================
+  window.addEventListener('load', function() {
+    setTimeout(function() {
+        const splash = document.getElementById('splash-screen');
+        splash.classList.add('splash-hidden');
+        
+        
+        setTimeout(function() {
+            document.getElementById('website-content').style.display = 'block';
+        }, 1000); 
+    }, 3000); 
+});
+
+// =============================================
+// HAMBURGER NAVBAR
+// =============================================
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
@@ -11,7 +29,9 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
     navMenu.classList.remove("active");
 }));
 
-// Dynamic Text Animation
+// =============================================
+// DYNAMIC TEXT ANIMATION
+// =============================================
 const texts = ["I'm Ubaid Khan", "I'm a Frontend Developer", "I Love Coding"];
 let count = 0;
 let index = 0;
@@ -36,7 +56,10 @@ if (letter.length === currentText.length) {
 
         typeText();
 
-        // Code Editor Animation
+
+// =============================================
+// CODE EDITOR ANIMATION
+// =============================================
 const code = `function welcome() {\n  console.log("Hello World!");\n  console.log("Welcome to my portfolio");\n}\n\nwelcome();`;
 let charIndex = 0;
 let codeElement = document.getElementById("code-editor");
@@ -55,8 +78,9 @@ if (charIndex > code.length) {
 
 setInterval(typeCode, 100);
 
-// Skills
-// Animate progress bars on scroll
+// =============================================
+// SKILLS ANIMATE PROGRESS BARS ON SCROLLS
+// =============================================
 const skillCards = document.querySelectorAll('.skill-card');
 
 const animateProgressBars = (entries, observer) => {
@@ -79,8 +103,9 @@ skillCards.forEach(card => {
 });
 
 
-// Projects
-// Project card animation
+// =============================================
+// PROJECTS CARD ANIMATION
+// =============================================
 const projectCards = document.querySelectorAll('.project-card');
 
 const animateCards = (entries, observer) => {
@@ -105,7 +130,9 @@ projectCards.forEach(card => {
 });
 
 
-// Testimonial animation
+// =============================================
+// TESTIMONIAL SECTION
+// =============================================
 const testimonialCards = document.querySelectorAll('.testimonial-card');
 
 const animateTestimonials = (entries, observer) => {
@@ -130,7 +157,9 @@ testimonialCards.forEach(card => {
 });
 
 
-// Dark Mode Toggle
+// =============================================
+// DARK MODE TOGGLE
+// =============================================
 const darkModeToggle = document.getElementById('darkModeToggle');
 const body = document.body;
 
@@ -158,7 +187,9 @@ function updateToggleIcon(theme) {
 updateToggleIcon(localStorage.getItem('theme') || 'light');
 
 
-// Back to Top Button
+// =============================================
+// BACK TO TOP BUTTON
+// =============================================
 const backToTop = document.querySelector('.back-to-top');
 
 window.addEventListener('scroll', () => {
@@ -178,12 +209,14 @@ backToTop.addEventListener('click', (e) => {
 });
 
 
-  // Initialize EmailJS with your account credentials
-  (function() {
+// =============================================
+// EMAIL DATA SENDING TO EMAIL.JS
+// =============================================
+(function() {
     emailjs.init("EOGxQ2uocw5tAIF7o"); // Replace with your EmailJS user ID
-  })();
+})();
 
-  document.getElementById('contact-form').addEventListener('submit', function(event) {
+document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault();
     
     // Get form data
